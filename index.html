@@ -1,731 +1,794 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Enhanced Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allika Sarees and Punjabi Dresses Shop - Premium Collection</title>
+    <meta name="description" content="Allika - Premium Indian ethnic wear. Shop exquisite Banarasi silk sarees, Kanjivaram sarees, Punjabi suits, and designer lehengas. Free shipping on orders over ₹3000.">
+    <meta name="keywords" content="sarees, Punjabi dresses, ethnic wear, Indian traditional, Banarasi silk, Kanjivaram, Chanderi, bridal wear">
+    <meta name="author" content="Allika Sarees">
+    <meta property="og:title" content="Allika - Premium Sarees & Punjabi Dresses">
+    <meta property="og:description" content="Discover our exclusive collection of traditional Indian wear with modern designs">
+    <meta property="og:image" content="https://i.ibb.co/0jQ7ZJx/allika-logo.png">
+    
+    <title>Allika Sarees & Punjabi Dresses | Premium Ethnic Wear Collection</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="font" crossorigin>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Allika Sarees & Punjabi Dresses",
+      "description": "Premium Indian ethnic wear store offering traditional sarees and Punjabi dresses",
+      "url": "https://www.allikasarees.com",
+      "logo": "https://i.ibb.co/0jQ7ZJx/allika-logo.png",
+      "telephone": "+919876543210",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Fashion Street",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400001",
+        "addressCountry": "IN"
+      },
+      "openingHours": "Mo-Sa 10:00-20:00",
+      "priceRange": "₹1000-₹50000"
+    }
+    </script>
 </head>
 <body>
-<!-- Navigation -->
-<nav>
-    <div class="nav-container">
-        <a href="#" class="logo">
-            <img src="https://i.ibb.co/0jQ7ZJx/allika-logo.png" alt="Allika Logo">
-            Allika
-        </a>
-        <ul class="nav-links">
-            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-            <li class="dropdown">
-                <a href="#"><i class="fas fa-tshirt"></i> Sarees <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#">Banarasi Silk</a>
-                    <a href="#">Kanjivaram</a>
-                    <a href="#">Chanderi Cotton</a>
-                    <a href="#">Tussar Silk</a>
-                    <a href="#">Designer Sarees</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="#"><i class="fas fa-vest"></i> Punjabi Dresses <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#">Punjabi Suits</a>
-                    <a href="#">Anarkali Dresses</a>
-                    <a href="#">Phulkari Suits</a>
-                    <a href="#">Casual Punjabi Wear</a>
-                </div>
-            </li>
-            <li><a href="#"><i class="fas fa-star"></i> Collections</a></li>
-            <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
-            <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
-        </ul>
-        <div class="search-bar">
-            <label for="search-input" class="visually-hidden">Search</label>
-            <input type="text" id="search-input" class="search-input" placeholder="Search...">
-            <button class="cart-icon">
-                <i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span>
-            </button>
-        </div>
-        <button class="mobile-menu">
-            <i class="fas fa-bars"></i>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Live Chat Widget -->
+    <div class="live-chat">
+        <button class="chat-toggle">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge">1</span>
         </button>
-    </div>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h1 class="hero-title">Allika</h1>
-        <p class="hero-subtitle">Premium Sarees & Punjabi Dresses</p>
-        <p class="hero-tagline">Experience the elegance of traditional Indian wear with modern designs</p>
-        <div class="hero-buttons">
-            <button class="cta-button">Shop Now</button>
-            <button class="cta-button cta-secondary">Explore Collections</button>
-        </div>
-    </div>
-</section>
-
-<!-- Category Filters -->
-<section class="filters">
-    <div class="filter-container">
-        <button class="filter-btn active"><i class="fas fa-border-all"></i> All</button>
-        <button class="filter-btn"><i class="fas fa-tshirt"></i> Silk Sarees</button>
-        <button class="filter-btn"><i class="fas fa-leaf"></i> Cotton Sarees</button>
-        <button class="filter-btn"><i class="fas fa-gem"></i> Banarasi</button>
-        <button class="filter-btn"><i class="fas fa-sun"></i> Chanderi</button>
-        <button class="filter-btn"><i class="fas fa-vest"></i> Punjabi Suits</button>
-        <button class="filter-btn"><i class="fas fa-fan"></i> Anarkali</button>
-        <button class="filter-btn"><i class="fas fa-fire"></i> New Arrivals</button>
-    </div>
-</section>
-
-<!-- Products Section -->
-<section class="products">
-    <div class="products-header">
-        <h1 class="products-title">Featured Products</h1>
-        <p class="products-subtitle">Discover our exclusive collection of traditional wear</p>
-    </div>
-
-    <!-- Premium Collection -->
-    <div class="container">
-        <h2 class="section-title">Our Premium Collection</h2>
-        <p class="section-subtitle">Handpicked traditional wear for every occasion</p>
-
-        <div class="product-grid">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <div class="product-image-container">
-                    <img src="images/img_12.png" alt="Royal Banarasi Silk Saree" class="product-image">
-                    <span class="product-image-badge">New</span>
-                    <div class="product-image-actions">
-                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-                        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Royal Banarasi Silk Saree</h3>
-                    <p class="product-price">₹5,999 <span class="product-original-price">₹8,999</span> <span class="product-discount">33% OFF</span></p>
-                    <p class="product-description">Pure Banarasi silk saree with intricate zari work, perfect for weddings and special occasions.</p>
-                    <div class="product-features">
-                        <span class="feature-tag">Pure Silk</span>
-                        <span class="feature-tag">Zari Work</span>
-                        <span class="feature-tag">Blouse Piece</span>
-                    </div>
-                    <div class="product-actions">
-                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                    </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <h4>Need help?</h4>
+                <button class="chat-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="chat-message bot">
+                    <p>Hi there! How can we help you today?</p>
                 </div>
             </div>
-
-            <!-- Product 2 -->
-            <div class="product-card">
-                <div class="product-image-container">
-                    <img src="images/img_5.png" alt="Elegant Chanderi Cotton Saree" class="product-image">
-                    <div class="product-image-actions">
-                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-                        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Elegant Chanderi Cotton Saree</h3>
-                    <p class="product-price">₹3,499 <span class="product-original-price">₹4,999</span> <span class="product-discount">30% OFF</span></p>
-                    <p class="product-description">Lightweight Chanderi cotton saree with traditional motifs, ideal for summer occasions.</p>
-                    <div class="product-features">
-                        <span class="feature-tag">Pure Cotton</span>
-                        <span class="feature-tag">Handwoven</span>
-                        <span class="feature-tag">Breathable</span>
-                    </div>
-                    <div class="product-actions">
-                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="product-card">
-                <div class="product-image-container">
-                    <img src="images/img_8.png" alt="Traditional Punjabi Suit Set" class="product-image">
-                    <span class="product-image-badge">Bestseller</span>
-                    <div class="product-image-actions">
-                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-                        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Traditional Punjabi Suit Set</h3>
-                    <p class="product-price">₹2,799 <span class="product-original-price">₹3,999</span> <span class="product-discount">30% OFF</span></p>
-                    <p class="product-description">Three-piece Punjabi suit with dupatta, featuring phulkari embroidery and vibrant colors.</p>
-                    <div class="product-features">
-                        <span class="feature-tag">Cotton</span>
-                        <span class="feature-tag">Phulkari Work</span>
-                        <span class="feature-tag">Comfort Fit</span>
-                    </div>
-                    <div class="product-actions">
-                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="product-card">
-                <div class="product-image-container">
-                    <img src="images/img_9.png" alt="Luxury Kanjivaram Silk Saree" class="product-image">
-                    <div class="product-image-actions">
-                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-                        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Luxury Kanjivaram Silk Saree</h3>
-                    <p class="product-price">₹7,999 <span class="product-original-price">₹10,999</span> <span class="product-discount">27% OFF</span></p>
-                    <p class="product-description">Authentic Kanjivaram silk saree with temple border and rich zari work, a timeless classic.</p>
-                    <div class="product-features">
-                        <span class="feature-tag">Pure Silk</span>
-                        <span class="feature-tag">Temple Border</span>
-                        <span class="feature-tag">Heavy Zari</span>
-                    </div>
-                    <div class="product-actions">
-                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="product-card">
-                <div class="product-image-container">
-                    <img src="images/img_10.png" alt="Designer Anarkali Dress" class="product-image">
-                    <span class="product-image-badge">Sale</span>
-                    <div class="product-image-actions">
-                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-                        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Designer Anarkali Dress</h3>
-                    <p class="product-price">₹3,299 <span class="product-original-price">₹4,499</span> <span class="product-discount">27% OFF</span></p>
-                    <p class="product-description">Floor-length Anarkali dress with intricate embroidery and flowing silhouette for a royal look.</p>
-                    <div class="product-features">
-                        <span class="feature-tag">Georgette</span>
-                        <span class="feature-tag">Embroidered</span>
-                        <span class="feature-tag">Dupatta Included</span>
-                    </div>
-                    <div class="product-actions">
-                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="product-card">
-                <div class="product-image-container">
-                    <img src="images/img_6.png" alt="Earthy Tussar Silk Saree" class="product-image">
-                    <div class="product-image-actions">
-                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-                        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Earthy Tussar Silk Saree</h3>
-                    <p class="product-price">₹4,499 <span class="product-original-price">₹5,999</span> <span class="product-discount">25% OFF</span></p>
-                    <p class="product-description">Natural tussar silk saree with tribal motifs and subtle sheen for an elegant ethnic look.</p>
-                    <div class="product-features">
-                        <span class="feature-tag">Tussar Silk</span>
-                        <span class="feature-tag">Tribal Motifs</span>
-                        <span class="feature-tag">Eco-Friendly</span>
-                    </div>
-                    <div class="product-actions">
-                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 7 -->
-            <div class="product-card">
-                <div class="product-image-container">
-                    <img src="images/img_2.png" alt="Vibrant Bandhani Saree" class="product-image">
-                    <span class="product-image-badge">New</span>
-                    <div class="product-image-actions">
-                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-                        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Vibrant Bandhani Saree</h3>
-                    <p class="product-price">₹3,799 <span class="product-original-price">₹5,499</span> <span class="product-discount">31% OFF</span></p>
-                    <p class="product-description">Traditional Bandhani tie-dye saree with vibrant colors and intricate patterns, perfect for festivals.</p>
-                    <div class="product-features">
-                        <span class="feature-tag">Cotton Silk</span>
-                        <span class="feature-tag">Tie-Dye</span>
-                        <span class="feature-tag">Festive Wear</span>
-                    </div>
-                    <div class="product-actions">
-                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 8 -->
-            <div class="product-card">
-                <div class="product-image-container">
-                    <img src="images/img_1.png" alt="Bridal Lehenga Choli" class="product-image">
-                    <span class="product-image-badge">Premium</span>
-                    <div class="product-image-actions">
-                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-                        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Bridal Lehenga Choli</h3>
-                    <p class="product-price">₹12,999 <span class="product-original-price">₹18,999</span> <span class="product-discount">32% OFF</span></p>
-                    <p class="product-description">Exquisite bridal lehenga with heavy embroidery, zari work, and matching dupatta for weddings.</p>
-                    <div class="product-features">
-                        <span class="feature-tag">Silk</span>
-                        <span class="feature-tag">Heavy Embroidery</span>
-                        <span class="feature-tag">Bridal Collection</span>
-                    </div>
-                    <div class="product-actions">
-                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 9 -->
-            <div class="product-card">
-                <div class="product-image-container">
-                    <img src="images/img_3.png" alt="Casual Cotton Punjabi Suit" class="product-image">
-                    <div class="product-image-actions">
-                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-                        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Casual Cotton Punjabi Suit</h3>
-                    <p class="product-price">₹1,999 <span class="product-original-price">₹2,999</span> <span class="product-discount">33% OFF</span></p>
-                    <p class="product-description">Comfortable cotton Punjabi suit for daily wear with simple embroidery and modern cut.</p>
-                    <div class="product-features">
-                        <span class="feature-tag">100% Cotton</span>
-                        <span class="feature-tag">Casual Wear</span>
-                        <span class="feature-tag">Comfort Fit</span>
-                    </div>
-                    <div class="product-actions">
-                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div style="text-align: center;">
-            <button class="cta-button" style="padding: 1rem 3rem; font-size: 1.2rem;">View All Products</button>
-        </div>
-    </div>
-</section>
-
-<!-- Special Offers Section -->
-<section class="offers">
-    <div class="container">
-        <h2 class="section-title" style="color: white;">Special Offers</h2>
-        <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Exclusive benefits for our valued customers</p>
-
-        <div class="offers-grid">
-            <div class="offer-card">
-                <div class="offer-icon">
-                    <i class="fas fa-tags"></i>
-                </div>
-                <h3 class="offer-title">Festival Discount</h3>
-                <p class="offer-description">Get 25% off on all silk sarees this festive season. Use code FESTIVE25 at checkout.</p>
-            </div>
-
-            <div class="offer-card">
-                <div class="offer-icon">
-                    <i class="fas fa-shipping-fast"></i>
-                </div>
-                <h3 class="offer-title">Free Shipping</h3>
-                <p class="offer-description">Free shipping on all orders above ₹3000 across India. No coupon needed.</p>
-            </div>
-
-            <div class="offer-card">
-                <div class="offer-icon">
-                    <i class="fas fa-gift"></i>
-                </div>
-                <h3 class="offer-title">First Purchase Gift</h3>
-                <p class="offer-description">Get a free designer blouse piece with your first saree purchase from our store.</p>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
             </div>
         </div>
     </div>
-</section>
 
-<!-- Reviews Section -->
-<section class="reviews">
-    <div class="reviews-container">
-        <h2 class="section-title">Customer Reviews</h2>
-        <p class="section-subtitle">What our customers say about us</p>
-
-        <div class="reviews-grid">
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="reviewer-avatar">PS</div>
-                    <div class="reviewer-info">
-                        <div class="reviewer-name">Priya Sharma</div>
-                        <div class="review-date">15 March 2023</div>
-                    </div>
-                </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="review-text">The Banarasi silk saree I purchased is absolutely stunning! The craftsmanship is exquisite and the colors are even more vibrant in person. Received so many compliments at my cousin's wedding.</p>
-                <div class="review-images">
-                    <img src="images/img_7.png" alt="Customer review image" class="review-image">
-                    <img src="images/img_8.png" alt="Customer review image" class="review-image">
-                </div>
-                <div class="review-helpful">
-                    <i class="fas fa-thumbs-up"></i> 24 people found this helpful
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="reviewer-avatar">RM</div>
-                    <div class="reviewer-info">
-                        <div class="reviewer-name">Rahul Mehta</div>
-                        <div class="review-date">2 April 2023</div>
-                    </div>
-                </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <p class="review-text">Bought the Punjabi suit set for my wife. The quality is excellent and the fit was perfect. The delivery was faster than expected. Will definitely shop here again!</p>
-                <div class="review-images">
-                    <img src="https://i.ibb.co/7yJ7Q1y/review3.jpg" alt="Customer review image" class="review-image">
-                </div>
-                <div class="review-helpful">
-                    <i class="fas fa-thumbs-up"></i> 18 people found this helpful
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="reviewer-avatar">AD</div>
-                    <div class="reviewer-info">
-                        <div class="reviewer-name">Ananya Das</div>
-                        <div class="review-date">28 February 2023</div>
-                    </div>
-                </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="review-text">The Chanderi cotton saree is so comfortable and beautiful. Perfect for summer weddings. The packaging was elegant and it came with a free blouse design booklet which was a nice touch.</p>
-                <div class="review-helpful">
-                    <i class="fas fa-thumbs-up"></i> 32 people found this helpful
-                </div>
-            </div>
-        </div>
-
-        <div class="review-form">
-            <h3 style="margin-bottom: 1.5rem; text-align: center;">Share Your Experience</h3>
-            <form>
-                <div class="form-group">
-                    <label for="review-name">Your Name</label>
-                    <input type="text" id="review-name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="review-email">Email Address</label>
-                    <input type="email" id="review-email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="review-rating">Rating</label>
-                    <select id="review-rating">
-                        <option value="5">★★★★★ Excellent</option>
-                        <option value="4">★★★★ Very Good</option>
-                        <option value="3">★★★ Good</option>
-                        <option value="2">★★ Fair</option>
-                        <option value="1">★ Poor</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="review-text">Your Review</label>
-                    <textarea id="review-text" placeholder="Share your experience with this product"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="review-images">Upload Photos (Optional)</label>
-                    <input type="file" id="review-images" multiple accept="image/*">
-                </div>
-                <div style="text-align: center;">
-                    <button type="submit" class="submit-review">Submit Review</button>
-                </div>
-            </form>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <span>✨ Free Shipping on Orders Over ₹3000 | Use Code FREESHIP at Checkout ✨</span>
+            <button class="announcement-close"><i class="fas fa-times"></i></button>
         </div>
     </div>
-</section>
 
-<!-- Footer -->
-<footer>
-    <div class="footer-content">
-        <div class="footer-grid">
-            <div class="footer-section">
-                <h3>Allika</h3>
-                <p>Premium traditional Indian wear since 2010. We bring you the finest sarees and Punjabi dresses from across India.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-pinterest"></i></a>
-                </div>
-                <div class="newsletter">
-                    <h4>Subscribe to Newsletter</h4>
-                    <div class="newsletter-input">
-                        <label for="newsletter-email" class="visually-hidden">Email address</label>
-                        <input type="email" id="newsletter-email" placeholder="Your email address">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="Allika Home">
+                <img src="https://i.ibb.co/0jQ7ZJx/allika-logo.png" alt="Allika Logo" loading="lazy">
+                Allika
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-tshirt"></i> Sarees <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#" data-category="banarasi">Banarasi Silk</a>
+                        <a href="#" data-category="kanjivaram">Kanjivaram</a>
+                        <a href="#" data-category="chanderi">Chanderi Cotton</a>
+                        <a href="#" data-category="tussar">Tussar Silk</a>
+                        <a href="#" data-category="designer">Designer Sarees</a>
+                        <a href="#" data-category="bridal">Bridal Collection</a>
+                        <a href="#" data-category="wedding">Wedding Sarees</a>
                     </div>
-                </div>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Shop</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Collections</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Customer Service</h3>
-                <ul>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> My Account</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Order Tracking</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Wishlist</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping Policy</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Returns & Exchanges</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> FAQs</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Mumbai, India</li>
-                    <li><i class="fas fa-phone"></i> +91 9876543210</li>
-                    <li><i class="fas fa-envelope"></i> info@allika.com</li>
-                    <li><i class="fas fa-clock"></i> Mon-Sat: 10AM - 8PM</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2023 Allika Sarees & Punjabi Dresses. All Rights Reserved.</p>
-            <div class="payment-methods">
-                <div class="payment-method">
-                    <img src="https://i.ibb.co/Qfvn4z6/payment-visa.png" alt="Visa">
-                </div>
-                <div class="payment-method">
-                    <img src="https://i.ibb.co/r5krrdz/payment-mastercard.png" alt="Mastercard">
-                </div>
-                <div class="payment-method">
-                    <img src="https://i.ibb.co/gPCq1GX/payment-paypal.png" alt="PayPal">
-                </div>
-                <div class="payment-method">
-                    <img src="https://i.ibb.co/QDFP1m9/payment-amex.png" alt="American Express">
-                </div>
-                <div class="payment-method">
-                    <img src="https://i.ibb.co/JKkzgdS/payment-rupay.png" alt="RuPay">
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Notification -->
-<div class="notification">
-    <i class="fas fa-check-circle"></i>
-    <span>Product added to cart successfully!</span>
-</div>
-
-<!-- Product Modal -->
-<div class="modal" id="productModal">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <div class="product-modal-content">
-            <div class="product-modal-images">
-                <img src="images/img_1.png" alt="Royal Banarasi Silk Saree" class="main-product-image">
-                <div class="product-thumbnails">
-                    <img src="images/img_1.png" alt="Thumbnail 1" class="product-thumbnail active">
-                    <img src="images/img_1.png" alt="Thumbnail 2" class="product-thumbnail">
-                    <img src="images/img_1.png" alt="Thumbnail 3" class="product-thumbnail">
-                    <img src="images/img_1.png" alt="Thumbnail 4" class="product-thumbnail">
-                    <img src="images/img_1.png" alt="Thumbnail 5" class="product-thumbnail">
-                </div>
-            </div>
-            <div class="product-modal-details">
-                <h2 class="product-modal-title">Royal Banarasi Silk Saree</h2>
-                <div class="product-modal-rating">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-vest"></i> Punjabi Dresses <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#" data-category="punjabi-suits">Punjabi Suits</a>
+                        <a href="#" data-category="anarkali">Anarkali Dresses</a>
+                        <a href="#" data-category="phulkari">Phulkari Suits</a>
+                        <a href="#" data-category="casual-punjabi">Casual Punjabi Wear</a>
+                        <a href="#" data-category="designer-suits">Designer Suits</a>
                     </div>
-                    <span class="product-modal-reviews">42 reviews</span>
-                </div>
-                <p class="product-modal-price">₹5,999 <span class="product-modal-original-price">₹8,999</span> <span class="product-modal-discount">33% OFF</span></p>
-                <p class="product-modal-description">Pure Banarasi silk saree with intricate zari work, perfect for weddings and special occasions. Comes with matching blouse piece. The rich golden zari work on deep red silk creates a regal look that's perfect for bridal wear or festive occasions.</p>
-
-                <div class="product-modal-options">
-                    <div class="product-option">
-                        <div class="product-option-title">Color</div>
-                        <div class="product-option-values">
-                            <div class="product-option-color selected" style="background: #8B4513;" title="Deep Red"></div>
-                            <div class="product-option-color" style="background: #D2691E;" title="Maroon"></div>
-                            <div class="product-option-color" style="background: #CD853F;" title="Gold"></div>
-                            <div class="product-option-color" style="background: #A0522D;" title="Dark Brown"></div>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-gem"></i> Collections <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#" data-category="wedding-collection">Wedding Collection</a>
+                        <a href="#" data-category="festive">Festive Wear</a>
+                        <a href="#" data-category="summer">Summer Collection</a>
+                        <a href="#" data-category="winter">Winter Collection</a>
+                        <a href="#" data-category="new-arrivals">New Arrivals</a>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <button class="search-toggle"><i class="fas fa-search"></i></button>
+                    <div class="search-container">
+                        <label for="search-input" class="visually-hidden">Search</label>
+                        <input type="text" id="search-input" class="search-input" placeholder="Search sarees, suits...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <div class="search-suggestions">
+                            <div class="suggestion-category">
+                                <h5>Popular Searches</h5>
+                                <ul>
+                                    <li><a href="#">Banarasi Silk Sarees</a></li>
+                                    <li><a href="#">Designer Punjabi Suits</a></li>
+                                    <li><a href="#">Bridal Lehengas</a></li>
+                                </ul>
+                            </div>
+                            <div class="suggestion-category">
+                                <h5>Trending Now</h5>
+                                <ul>
+                                    <li><a href="#">Cotton Sarees</a></li>
+                                    <li><a href="#">Anarkali Dresses</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="product-modal-actions">
-                    <div class="quantity-selector">
-                        <button class="quantity-btn minus">-</button>
-                        <label for="quantity-input" class="visually-hidden">Quantity</label>
-                        <input type="number" id="quantity-input" class="quantity-input" value="1" min="1">
-                        <button class="quantity-btn plus">+</button>
-                    </div>
-                    <button class="product-modal-add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                    <button class="product-modal-wishlist"><i class="far fa-heart"></i></button>
+                
+                <div class="user-actions">
+                    <a href="#" class="user-icon" aria-label="Account"><i class="far fa-user"></i></a>
+                    <button class="wishlist-icon" aria-label="Wishlist">
+                        <i class="far fa-heart"></i>
+                        <span class="wishlist-count">3</span>
+                    </button>
+                    <button class="cart-icon" aria-label="Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">2</span>
+                    </button>
                 </div>
+                
+                <button class="mobile-menu" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-                <div class="product-modal-meta">
-                    <div class="product-meta-item">
-                        <span class="product-meta-label">SKU:</span>
-                        <span>BAN-SILK-001</span>
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="videos/hero-background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Allika</h1>
+            <p class="hero-subtitle">Where Tradition Meets Elegance</p>
+            <p class="hero-tagline">Premium handcrafted sarees & Punjabi dresses for every occasion</p>
+            
+            <div class="hero-buttons">
+                <a href="#products" class="cta-button">Shop Now</a>
+                <button class="cta-button cta-secondary" id="exploreCollections">Explore Collections</button>
+                <button class="cta-button cta-tertiary" id="virtualTryOnBtn">Virtual Try-On</button>
+            </div>
+            
+            <div class="hero-scroll-indicator">
+                <span>Scroll to Explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <div class="trust-indicators">
+        <div class="trust-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>100% Authentic</span>
+        </div>
+        <div class="trust-item">
+            <i class="fas fa-truck"></i>
+            <span>Free Shipping Over ₹3000</span>
+        </div>
+        <div class="trust-item">
+            <i class="fas fa-exchange-alt"></i>
+            <span>Easy Returns</span>
+        </div>
+        <div class="trust-item">
+            <i class="fas fa-headset"></i>
+            <span>24/7 Support</span>
+        </div>
+    </div>
+
+    <!-- Category Showcase -->
+    <section class="category-showcase">
+        <div class="container">
+            <h2 class="section-title">Shop By Category</h2>
+            <p class="section-subtitle">Discover our curated collections</p>
+            
+            <div class="category-grid">
+                <a href="#" class="category-card" data-category="banarasi">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Banarasi Silk Sarees" loading="lazy">
                     </div>
-                    <div class="product-meta-item">
-                        <span class="product-meta-label">Category:</span>
-                        <span>Banarasi Silk Sarees</span>
+                    <h3>Banarasi Silk</h3>
+                    <p>Shop Now <i class="fas fa-arrow-right"></i></p>
+                </a>
+                
+                <a href="#" class="category-card" data-category="kanjivaram">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Kanjivaram Sarees" loading="lazy">
                     </div>
-                    <div class="product-meta-item">
-                        <span class="product-meta-label">Tags:</span>
-                        <span>Wedding, Bridal, Festive, Zari Work</span>
+                    <h3>Kanjivaram</h3>
+                    <p>Shop Now <i class="fas fa-arrow-right"></i></p>
+                </a>
+                
+                <a href="#" class="category-card" data-category="punjabi-suits">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" alt="Punjabi Suits" loading="lazy">
                     </div>
-                    <div class="product-meta-item">
-                        <span class="product-meta-label">Share:</span>
-                        <span>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-pinterest"></i></a>
-                                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                            </span>
+                    <h3>Punjabi Suits</h3>
+                    <p>Shop Now <i class="fas fa-arrow-right"></i></p>
+                </a>
+                
+                <a href="#" class="category-card" data-category="bridal">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80" alt="Bridal Collection" loading="lazy">
+                    </div>
+                    <h3>Bridal Collection</h3>
+                    <p>Shop Now <i class="fas fa-arrow-right"></i></p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Product Filters -->
+    <section class="filters">
+        <div class="filter-container">
+            <div class="filter-section">
+                <h4>Filter By:</h4>
+                
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all"><i class="fas fa-border-all"></i> All</button>
+                    <button class="filter-btn" data-filter="sarees"><i class="fas fa-tshirt"></i> Sarees</button>
+                    <button class="filter-btn" data-filter="punjabi"><i class="fas fa-vest"></i> Punjabi</button>
+                    <button class="filter-btn" data-filter="bridal"><i class="fas fa-gem"></i> Bridal</button>
+                </div>
+                
+                <div class="filter-group">
+                    <div class="filter-dropdown">
+                        <button class="filter-dropdown-btn">Fabric <i class="fas fa-chevron-down"></i></button>
+                        <div class="filter-dropdown-content">
+                            <label><input type="checkbox" name="fabric" value="silk" checked> Silk</label>
+                            <label><input type="checkbox" name="fabric" value="cotton" checked> Cotton</label>
+                            <label><input type="checkbox" name="fabric" value="chanderi" checked> Chanderi</label>
+                            <label><input type="checkbox" name="fabric" value="georgette" checked> Georgette</label>
+                            <label><input type="checkbox" name="fabric" value="linen" checked> Linen</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-dropdown">
+                        <button class="filter-dropdown-btn">Price <i class="fas fa-chevron-down"></i></button>
+                        <div class="filter-dropdown-content">
+                            <div class="price-range-slider">
+                                <input type="range" min="500" max="50000" value="500" class="slider" id="price-min">
+                                <input type="range" min="500" max="50000" value="50000" class="slider" id="price-max">
+                                <div class="price-values">
+                                    <span id="min-price-value">₹500</span> - 
+                                    <span id="max-price-value">₹50,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-dropdown">
+                        <button class="filter-dropdown-btn">Color <i class="fas fa-chevron-down"></i></button>
+                        <div class="filter-dropdown-content color-options">
+                            <div class="color-option" style="background: #8B0000;" title="Red" data-color="red"></div>
+                            <div class="color-option" style="background: #00008B;" title="Blue" data-color="blue"></div>
+                            <div class="color-option" style="background: #006400;" title="Green" data-color="green"></div>
+                            <div class="color-option" style="background: #FFD700;" title="Gold" data-color="gold"></div>
+                            <div class="color-option" style="background: #4B0082;" title="Purple" data-color="purple"></div>
+                            <div class="color-option" style="background: #000000;" title="Black" data-color="black"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-dropdown">
+                        <button class="filter-dropdown-btn">Occasion <i class="fas fa-chevron-down"></i></button>
+                        <div class="filter-dropdown-content">
+                            <label><input type="checkbox" name="occasion" value="wedding" checked> Wedding</label>
+                            <label><input type="checkbox" name="occasion" value="festive" checked> Festive</label>
+                            <label><input type="checkbox" name="occasion" value="casual" checked> Casual</label>
+                            <label><input type="checkbox" name="occasion" value="office" checked> Office</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sort-section">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="popular">Most Popular</option>
+                    <option value="newest">Newest Arrivals</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="discount">Best Discount</option>
+                    <option value="rating">Customer Rating</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="products-header">
+            <h1 class="products-title">Our Premium Collection</h1>
+            <p class="products-subtitle">Handpicked traditional wear for every occasion</p>
+        </div>
+
+        <div class="container">
+            <div class="product-grid">
+                <!-- Product cards will be loaded dynamically from JavaScript -->
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn disabled"><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span>...</span>
+                <button class="page-btn">8</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Try-On Section -->
+    <section class="virtual-try-on">
+        <div class="container">
+            <div class="try-on-content">
+                <div class="try-on-info">
+                    <h2>Virtual Try-On</h2>
+                    <p>See how our sarees and suits look on you before you buy! Upload your photo or use your camera to virtually try on our collection.</p>
+                    <div class="try-on-options">
+                        <button class="try-on-option-btn" id="uploadPhotoBtn"><i class="fas fa-upload"></i> Upload Photo</button>
+                        <button class="try-on-option-btn" id="useCameraBtn"><i class="fas fa-camera"></i> Use Camera</button>
+                    </div>
+                    <div class="try-on-instructions">
+                        <h4>How it works:</h4>
+                        <ol>
+                            <li>Upload a clear photo of yourself (full body or upper body)</li>
+                            <li>Select a product from our collection</li>
+                            <li>Adjust the fit and position</li>
+                            <li>See how it looks on you!</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="try-on-demo">
+                    <div class="try-on-preview">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Virtual Try-On Preview" id="tryOnPreview">
+                        <div class="try-on-overlay" id="tryOnOverlay"></div>
+                    </div>
+                    <div class="try-on-controls">
+                        <button class="try-on-control-btn" id="rotateLeftBtn"><i class="fas fa-undo"></i></button>
+                        <button class="try-on-control-btn" id="zoomInBtn"><i class="fas fa-search-plus"></i></button>
+                        <button class="try-on-control-btn" id="zoomOutBtn"><i class="fas fa-search-minus"></i></button>
+                        <button class="try-on-control-btn" id="rotateRightBtn"><i class="fas fa-redo"></i></button>
+                    </div>
+                    <div class="try-on-products">
+                        <h4>Try These Products:</h4>
+                        <div class="try-on-product-grid">
+                            <div class="try-on-product" data-product="product1">
+                                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Banarasi Silk Saree">
+                                <p>Banarasi Silk</p>
+                            </div>
+                            <div class="try-on-product" data-product="product2">
+                                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" alt="Punjabi Suit">
+                                <p>Punjabi Suit</p>
+                            </div>
+                            <div class="try-on-product" data-product="product3">
+                                <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80" alt="Bridal Lehenga">
+                                <p>Bridal Lehenga</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Styling Tips Section -->
+    <section class="styling-tips">
+        <div class="container">
+            <h2 class="section-title">Styling Tips & Inspiration</h2>
+            <p class="section-subtitle">Learn how to drape and style our products</p>
+            
+            <div class="tips-grid">
+                <div class="tip-card" data-video="https://www.youtube.com/embed/xyz123">
+                    <div class="tip-video">
+                        <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80" alt="Saree Draping Tutorial" loading="lazy">
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <h3>5 Ways to Drape a Saree</h3>
+                    <p>Learn different draping styles for various occasions</p>
+                </div>
+                
+                <div class="tip-card" data-video="https://www.youtube.com/embed/abc456">
+                    <div class="tip-video">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Accessorizing Tips" loading="lazy">
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <h3>Accessorizing Your Ethnic Wear</h3>
+                    <p>Complete your look with the perfect jewelry</p>
+                </div>
+                
+                <div class="tip-card" data-video="https://www.youtube.com/embed/def789">
+                    <div class="tip-video">
+                        <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Hair & Makeup Tips" loading="lazy">
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <h3>Hair & Makeup for Ethnic Wear</h3>
+                    <p>Complement your traditional outfit with these looks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Social Proof -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Loved By Our Customers</h2>
+            <p class="section-subtitle">Join 10,000+ happy customers</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The Banarasi silk saree I purchased is absolutely stunning! The craftsmanship is exquisite and the colors are even more vibrant in person. Received so many compliments at my cousin's wedding."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priya Sharma" loading="lazy">
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <span>Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"Bought the Punjabi suit set for my wife. The quality is excellent and the fit was perfect. The delivery was faster than expected. Will definitely shop here again!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul Mehta" loading="lazy">
+                            <div>
+                                <h4>Rahul Mehta</h4>
+                                <span>Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The Chanderi cotton saree is so comfortable and beautiful. Perfect for summer weddings. The packaging was elegant and it came with a free blouse design booklet."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ananya Das" loading="lazy">
+                            <div>
+                                <h4>Ananya Das</h4>
+                                <span>Bangalore</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="social-proof">
+                <div class="proof-item">
+                    <div class="proof-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="proof-content">
+                        <h4>10,000+</h4>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+                
+                <div class="proof-item">
+                    <div class="proof-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="proof-content">
+                        <h4>50+</h4>
+                        <p>Cities Served</p>
+                    </div>
+                </div>
+                
+                <div class="proof-item">
+                    <div class="proof-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="proof-content">
+                        <h4>4.9/5</h4>
+                        <p>Average Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-feed">
+        <div class="container">
+            <div class="instagram-header">
+                <h2 class="section-title">Follow Us @AllikaSarees</h2>
+                <p class="section-subtitle">Tag us for a chance to be featured!</p>
+            </div>
+            
+            <div class="instagram-grid">
+                <div class="instagram-post">
+                    <img src="https://images.unsplash.com/photo-1561526116-e2460f4d40a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80" alt="Instagram Post" loading="lazy">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-post">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Instagram Post" loading="lazy">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-post">
+                    <img src="https://images.unsplash.com/photo-1561526116-e2460f4d40a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80" alt="Instagram Post" loading="lazy">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-post">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Instagram Post" loading="lazy">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-post">
+                    <img src="https://images.unsplash.com/photo-1561526116-e2460f4d40a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80" alt="Instagram Post" loading="lazy">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-post">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Instagram Post" loading="lazy">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-info">
+                    <h2>Join Our Newsletter</h2>
+                    <p>Subscribe to get exclusive offers, styling tips, and early access to new collections.</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button class="cta-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Allika</h3>
+                    <p>Premium traditional Indian wear since 2010. We bring you the finest sarees and Punjabi dresses from across India.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Sarees</a></li>
+                        <li><a href="#">Punjabi Dresses</a></li>
+                        <li><a href="#">Bridal Collection</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>About Allika</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Artisans</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Mumbai, India</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope"></i> info@allika.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 10AM - 8PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <img src="https://i.ibb.co/Qfvn4z6/payment-visa.png" alt="Visa" loading="lazy">
+                    </div>
+                    <div class="payment-method">
+                        <img src="https://i.ibb.co/r5krrdz/payment-mastercard.png" alt="Mastercard" loading="lazy">
+                    </div>
+                    <div class="payment-method">
+                        <img src="https://i.ibb.co/gPCq1GX/payment-paypal.png" alt="PayPal" loading="lazy">
+                    </div>
+                    <div class="payment-method">
+                        <img src="https://i.ibb.co/QDFP1m9/payment-amex.png" alt="American Express" loading="lazy">
+                    </div>
+                    <div class="payment-method">
+                        <img src="https://i.ibb.co/JKkzgdS/payment-rupay.png" alt="RuPay" loading="lazy">
+                    </div>
+                    <div class="payment-method">
+                        <img src="https://i.ibb.co/0nXWrJb/payment-upi.png" alt="UPI" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <p>&copy; 2023 Allika Sarees & Punjabi Dresses. All Rights Reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Shipping Policy</a>
+                        <a href="#">Refund Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <!-- Modal content would be loaded dynamically -->
     </div>
-</div>
 
-<!-- Size Guide Modal -->
-<div class="size-guide-modal">
-    <div class="size-guide-content">
-        <span class="size-guide-close">&times;</span>
-        <h2 class="size-guide-title">Saree Size Guide</h2>
-
-        <h3 style="margin-bottom: 1rem;">Blouse Size Chart (in inches)</h3>
-        <table class="size-guide-table">
-            <thead>
-            <tr>
-                <th>Size</th>
-                <th>Bust</th>
-                <th>Waist</th>
-                <th>Hip</th>
-                <th>Shoulder</th>
-                <th>Length</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>S</td>
-                <td>32-34</td>
-                <td>26-28</td>
-                <td>34-36</td>
-                <td>14</td>
-                <td>14</td>
-            </tr>
-            <tr>
-                <td>M</td>
-                <td>34-36</td>
-                <td>28-30</td>
-                <td>36-38</td>
-                <td>15</td>
-                <td>14.5</td>
-            </tr>
-            <tr>
-                <td>L</td>
-                <td>36-38</td>
-                <td>30-32</td>
-                <td>38-40</td>
-                <td>16</td>
-                <td>15</td>
-            </tr>
-            <tr>
-                <td>XL</td>
-                <td>38-40</td>
-                <td>32-34</td>
-                <td>40-42</td>
-                <td>17</td>
-                <td>15.5</td>
-            </tr>
-            </tbody>
-        </table>
-
-        <h3 style="margin-bottom: 1rem; margin-top: 2rem;">How to Measure</h3>
-        <ol style="margin-bottom: 1.5rem; line-height: 1.6;">
-            <li><strong>Bust:</strong> Measure around the fullest part of your bust.</li>
-            <li><strong>Waist:</strong> Measure around your natural waistline.</li>
-            <li><strong>Hip:</strong> Measure around the fullest part of your hips.</li>
-            <li><strong>Shoulder:</strong> Measure from one shoulder edge to the other.</li>
-            <li><strong>Length:</strong> Measure from the base of your neck to your desired blouse length.</li>
-        </ol>
-
-        <p style="font-style: italic; color: #666;">Note: All sarees come with standard 5.5 meters length. For custom lengths, please contact customer service.</p>
+    <!-- Size Guide Modal -->
+    <div class="modal" id="sizeGuideModal">
+        <!-- Size guide content -->
     </div>
-</div>
 
-<!-- Image Zoom Modal -->
-<div class="image-zoom-modal">
-    <div class="zoom-modal-content">
-        <span class="zoom-close">&times;</span>
-        <div class="zoom-nav zoom-prev"><i class="fas fa-chevron-left"></i></div>
-        <img src="images/img_1.png" alt="Zoomed product image" class="zoomed-image">
-        <div class="zoom-nav zoom-next"><i class="fas fa-chevron-right"></i></div>
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
-</div>
 
-<script src="script.js"></script>
+    <!-- Age Verification Modal -->
+    <div class="modal" id="ageVerificationModal">
+        <div class="modal-content">
+            <h2>Welcome to Allika</h2>
+            <p>You must be at least 16 years old to enter this site. Are you 16 or older?</p>
+            <div class="age-verification-buttons">
+                <button class="cta-button" id="confirmAge">Yes, I'm 16 or older</button>
+                <button class="cta-button cta-secondary" id="declineAge">No, I'm under 16</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Loading Spinner -->
+    <!-- <div class="loading-spinner">
+        <div class="spinner"></div>
+    </div> -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </body>
 </html>
-
